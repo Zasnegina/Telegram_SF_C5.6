@@ -8,7 +8,7 @@ bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(commands=['start', 'help'])
 def welcome(message: telebot.types.Message):
     text = 'Чтобы начать работу введите следующие параметры через пробел: \n<исходная валюта> \n<конечная валюта> ' \
-           '\n<количество>. \n Чтобы увидеть список всех доступных валют введите команду /values '
+           '\n<сумма>. \n Чтобы увидеть список всех доступных валют введите команду /values '
     bot.reply_to(message, text)
 
 
